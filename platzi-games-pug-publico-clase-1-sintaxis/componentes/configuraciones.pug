@@ -1,0 +1,15 @@
+//- INTERPOLACION
+//- Es como pug maneja la anidacion de elementos dentro de otros elementos
+-var titulo_principal = "CAMBELGAMES"
+-var titulo = "Titulo Principal"
+-var subtitulo = "Subtitulo Principal"
+-var titulos = ["Titulo Principal", "Subtitulo 1", "Subtitulo 2","Subtitulo 3"]
+-var usuario = "Camilo"
+-var enlaces= ['Acerca', 'Noticias','Contacto']
+//- mixin
+mixin caja(imagen,titulo,contenido) 
+	.caja
+		.caja__imagen: img(src="./images/"+imagen , alt="")
+		.caja__contenido 
+			h3= titulo 
+			p= contenido

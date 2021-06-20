@@ -1,0 +1,23 @@
+extend componentes/plantilla.pug
+block contenidos
+		section.intro
+			//- Esto del : solo funciona cuando hay un solo hijo dentro de un elemento
+			div.intro__imagen: img(src="./images/imagen.png", alt="Imagen del proyecto")
+			.intro__contenido
+				//- Para mandar a llamar una varaible se usa = y debe estar pegado al elemento
+				//- h2= titulo
+				h2 #{titulos[0]}
+				//- p.
+				//- 	Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam voluptatum repellendus dolore vero dicta, porro possimus. Magni hic iste corporis! Porro qui deserunt nesciunt ducimus eligendi nam accusamus aliquid incidunt?
+				p
+					| Lorem ipsum dolor sit amet consectetur adipisicing elit.
+					| Veniam voluptatum repellendus dolore vero dicta, porro possimus.
+					| Magni hic iste corporis! Porro qui deserunt nesciunt
+					| ducimus eligendi nam accusamus aliquid incidunt?
+					span Porro qui deserunt nesciunt ducimus eligendi nam accusamus aliquid 
+				a.boton Leer mas
+		main.contenido
+			//- Para llamar un mixin se hace uso del simbolo + seguido por el nombre del mixin
+			+caja('imagen.png',titulos[1],'Lorem ipsum dolor sit amet') 
+			+caja('imagen.png',titulos[2],'Lorem ipsum dolor sit amet') 
+			+caja('imagen.png',titulos[3],'Lorem ipsum dolor sit amet') 
