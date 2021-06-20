@@ -1,5 +1,7 @@
 @import "componentes/bootstrap_reboot";
+@import "componentes/breakpoints";
 @import "componentes/globales.scss";
+@import "componentes/grids";
 @import "componentes/perfiles.scss";
 @import "componentes/estadisticas.scss";
 @import "componentes/ubicaciones.scss";
@@ -11,3 +13,6 @@
 @import "componentes/filtros.scss";
 @import "componentes/headers";
 @import "componentes/footers";
+@import "componentes/homepages";
+@import "componentes/sidebars";
+@import "componentes/banners";

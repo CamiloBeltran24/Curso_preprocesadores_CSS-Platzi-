@@ -9,12 +9,10 @@
   @include caja;
   &__foto-principal {
     float: left;
-    margin-right: 10px;
+    // margin-right: 10px;
   }
   &__fotos-adicionales img {
     height: 70px;
-    margin-right: 5px;
-    margin-bottom: 5px;
   }
   h2 {
     margin-bottom: 10px;
