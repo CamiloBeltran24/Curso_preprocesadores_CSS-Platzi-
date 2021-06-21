@@ -1,6 +1,7 @@
 .sidebar--listado {
   max-width: 315px;
   padding: 20px;
+  margin: 20px auto;
   @include caja();
   h3 {
     @include font-size(20px);
@@ -24,5 +25,8 @@
   &__numero {
     margin-right: 20px;
     color: get-opacity($color-primario, 0.5);
+  }
+  @include media(desktop-s) {
+    margin: 0;
   }
 }
