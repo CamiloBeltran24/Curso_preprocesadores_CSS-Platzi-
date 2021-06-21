@@ -7,10 +7,11 @@
   margin-top: 30px;
   background-color: $color-primario;
   @include media(desktop-s) {
-    width: auto;
+    width: 1300px;
+    height: 160px;
     flex-direction: row;
     padding: 0 20px 20px 20px;
-    height: 160px;
+    margin-top: 20px;
   }
 }
 .nav--footer ul {
